@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Stack It, Balance It</title>
+
+    <style>
+        :root {
+            --red: #E53935;
+            --dark-red: #B71C1C;
+            --light: #F5F5F5;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900">
+
+    <!-- Header -->
+    <header class="p-5 bg-[var(--red)] text-white shadow-lg">
+        <a href="../index.html" class="text-sm underline">← Back</a>
+        <h1 class="text-xl font-bold mt-1">Stack It, Balance It</h1>
+    </header>
+
+    <main class="p-4 space-y-6 max-w-lg mx-auto">
+
+        <!-- Video Demo -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Video Demo</h2>
+
+            <!-- Replace VIDEO_ID -->
+            <iframe class="w-full aspect-video rounded-lg"
+                src="https://www.youtube.com/embed/zH5uuOaGYw0"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- Objectives -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Objectives</h2>
+            <p>To develop <strong>trust</strong>, <strong>focus</strong>, and <strong>precision</strong> while performing coordinated team tasks under pressure.</p>
+        </section>
+
+        <!-- Materials -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Materials</h2>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Cups</li>
+                <li>Ball</li>
+                <li>Basket</li>
+            </ul>
+        </section>
+
+        <!-- Mechanics -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Mechanics</h2>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li>The group must consist of five to ten players.</li>
+                <li>The group will form a straight line.</li>
+                <li>The player should build the cups in pyramid stacks (4, 3, 2, 1).</li>
+                <li>After forming, the ball must be placed on top and then unstacked without falling.</li>
+                <li>Players are allowed to use both hands to stack the cups.</li>
+            </ul>
+        </section>
+
+        <!-- Rules -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Rules</h2>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li>Only one hand may be used when unstacking the cups.</li>
+                <li>If the ball falls, the team must start over.</li>
+                <li>The next player starts once the previous finishes retrieving the stack.</li>
+                <li>The group who finishes first wins.</li>
+                <li>For races, the group with the shortest time wins.</li>
+            </ul>
+        </section>
+
+        <!-- Values -->
+        <section class="bg-white/40 backdrop-blur-lg p-4 rounded-2xl shadow">
+            <h2 class="text-lg font-semibold mb-2 text-[var(--dark-red)]">Values</h2>
+            <p class="text-sm">
+                <strong>Slowly</strong> but <strong>surely</strong>. It is better to take it slowly rather than rush without assurance of a good result.
+            </p>
+        </section>
+
+        <!-- QR Code -->
+        <section class="bg-white/40 backdrop-blur-lg p-5 rounded-2xl shadow text-center">
+            <h2 class="text-lg font-semibold mb-3 text-[var(--dark-red)]">Scan to Access</h2>
+            <div id="qrcode" class="flex justify-center"></div>
+        </section>
+
+    </main>
+
+    <!-- QR CODE SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://yourdomain.com/activities/stack-it-balance-it.html",
+            width: 140,
+            height: 140
+        });
+    </script>
+
+</body>
+
+</html>
